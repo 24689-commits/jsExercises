@@ -25,4 +25,35 @@
  //8. Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope before code execution and variable scope is the lifetime in the program.
 
 
- 
+// Question 2
+let sName = 'Aphelele'
+function fullName(){
+    console.log(sName);
+}
+fullName()
+
+let firstName = 'Aphelele'
+lastName = 'Joyi'
+age = 19
+
+
+let personalDetails = {
+    firstName : 'Aphelele',
+    lastName : 'Joyi',
+    age : 19
+
+}
+
+subjectList = ['Html', 'CSS', 'Bootstrap', 'Javascript'];
+let address={
+    streetNumber : 183,
+    streetName: 'Khali street',
+    suburb : 'Khayelitsha',
+    city : 'Cape Town',
+    country : 'South Africa'
+
+}
+function details(){
+console.log(personalDetails,address, subjectList);
+}
+details()
