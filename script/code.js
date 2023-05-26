@@ -57,3 +57,32 @@ function details(){
 console.log(personalDetails,address, subjectList);
 }
 details()
+
+
+// Question 3
+
+function calculateResult() {
+    let number1 = parseFloat(document.querySelector("#number1").value) ;
+    let operator = document.querySelector("#operator").value;
+    let number2 = parseFloat(document.querySelector("#number2").value);
+  
+    let result = document.querySelector('#lblResult');
+  
+    if (operator === "+") {
+      result.innerText = number1 + number2;
+    } else if (operator === "-") {
+      result.innerText = number1 - number2;
+    } else if (operator === "*") {
+      result.innerText = number1 * number2;
+    } else if (operator === "/") {
+      result.innerText = number1 / number2;
+    } else {
+      result.innerText = "Invalid operator";
+    }
+  
+    
+    console.log(result); 
+  }
+  
+  let btnResult = document.querySelector("#btnResult");
+  btnResult.addEventListener("click", calculateResult);
