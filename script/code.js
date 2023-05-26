@@ -59,7 +59,7 @@ console.log(personalDetails,address, subjectList);
 details()
 
 
-<<<<<<< HEAD
+
 // Question 3
 
 function calculateResult() {
@@ -87,25 +87,5 @@ function calculateResult() {
   
   let btnResult = document.querySelector("#btnResult");
   btnResult.addEventListener("click", calculateResult);
-=======
-let height = parseFloat(document.getElementById("height").value);
-let weight = parseFloat(document.getElementById("weight").value);
 
 
-
-let result = document.getElementById("result")
-function answerBMI() {
-    let numb1 = parseInt(document.getElementById("weight").value);
-    let numb2 = parseInt(document.getElementById("height").value);
-      let bmi = numb1 + numb2
-      document.getElementById("result").innerHTML =  bmi.toFixed(1);
-      if (height === "") {
-          document.getElementById("result").innerHTML = "Please enter height.";
-          
-        }
-        else if (weight === "") {
-            document.getElementById("result").innerHTML = "Please enter weight.";
-            
-            
-        }
->>>>>>> 0f1cdf1836ab36c3836625d44b683be3fef51b4a
