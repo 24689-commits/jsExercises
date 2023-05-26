@@ -57,3 +57,25 @@ function details(){
 console.log(personalDetails,address, subjectList);
 }
 details()
+
+
+let height = parseFloat(document.getElementById("height").value);
+let weight = parseFloat(document.getElementById("weight").value);
+
+
+
+let result = document.getElementById("result")
+function answerBMI() {
+    let numb1 = parseInt(document.getElementById("weight").value);
+    let numb2 = parseInt(document.getElementById("height").value);
+      let bmi = numb1 + numb2
+      document.getElementById("result").innerHTML =  bmi.toFixed(1);
+      if (height === "") {
+          document.getElementById("result").innerHTML = "Please enter height.";
+          
+        }
+        else if (weight === "") {
+            document.getElementById("result").innerHTML = "Please enter weight.";
+            
+            
+        }
