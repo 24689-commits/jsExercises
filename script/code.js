@@ -120,3 +120,30 @@ let array = [
   console.log(`Mish is ${age} years old, and there are ${daysLeft} days left until their birthday.`);
 
   
+  // Question6
+
+  let userMarks = parseInt(prompt('Please enter your marks'));
+  let message;
+  switch (true) {
+    case userMarks === 100:
+      message = "You're amazing!";
+      break;
+    case userMarks >= 90 && userMarks <= 99:
+      message = "Well Done";
+      break;
+    case userMarks >= 80 && userMarks <= 89:
+      message = "Way to go";
+      break;
+    case userMarks >= 75 && userMarks <= 79:
+      message = "Keep it up";
+      break;
+    case userMarks >= 60 && userMarks <= 74:
+      message = "You did good";
+      break;
+    case userMarks >= 50 && userMarks <= 59:
+      message = "That was good";
+      break;
+    default:
+      message = "You failed";
+  }
+  console.log(message);
