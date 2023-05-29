@@ -26,37 +26,37 @@
 
 
 // Question 2
-let sName = 'Aphelele'
-function fullName(){
-    console.log(sName);
-}
-fullName()
+// let sName = 'Aphelele'
+// function fullName(){
+//     console.log(sName);
+// }
+// fullName()
 
-let firstName = 'Aphelele'
-lastName = 'Joyi'
-age = 19
+// let firstName = 'Aphelele'
+// lastName = 'Joyi'
+// age = 19
 
 
-let personalDetails = {
-    firstName : 'Aphelele',
-    lastName : 'Joyi',
-    age : 19
+// let personalDetails = {
+//     firstName : 'Aphelele',
+//     lastName : 'Joyi',
+//     age : 19
 
-}
+// }
 
-subjectList = ['Html', 'CSS', 'Bootstrap', 'Javascript'];
-let address={
-    streetNumber : 183,
-    streetName: 'Khali street',
-    suburb : 'Khayelitsha',
-    city : 'Cape Town',
-    country : 'South Africa'
+// subjectList = ['Html', 'CSS', 'Bootstrap', 'Javascript'];
+// let address={
+//     streetNumber : 183,
+//     streetName: 'Khali street',
+//     suburb : 'Khayelitsha',
+//     city : 'Cape Town',
+//     country : 'South Africa'
 
-}
-function details(){
-console.log(personalDetails,address, subjectList);
-}
-details()
+// }
+// function details(){
+// console.log(personalDetails,address, subjectList);
+// }
+// details()
 
 
 
@@ -97,3 +97,26 @@ let sname = 'programming'
       newName += sname[i];
   }
 console.log(newName);
+
+
+//question 5
+
+let array = [
+  { name: 'Mish-AI',
+   dateOfBirth: '2020-05-31'
+   }];
+  let today = new Date();
+  let mish = array[0];
+  let mishDob = new Date(mish.dateOfBirth);
+  let ageDiff = today.getFullYear() - mishDob.getFullYear();
+  let isBirthdayPassed = today.getMonth() > mishDob.getMonth() ||
+    (today.getMonth() === mishDob.getMonth() && today.getDate() >= mishDob.getDate());
+  let age = isBirthdayPassed ? ageDiff : ageDiff - 1;
+  let nextBirthday = new Date(today.getFullYear(), mishDob.getMonth(), mishDob.getDate());
+  if (today > nextBirthday) {
+    nextBirthday.setFullYear(nextBirthday.getFullYear() + 1);
+  }
+  let daysLeft = Math.floor((nextBirthday - today) / (1000 * 60 * 60 * 24));
+  console.log(`Mish is ${age} years old, and there are ${daysLeft} days left until their birthday.`);
+
+  
