@@ -88,4 +88,12 @@ function calculateResult() {
   let btnResult = document.querySelector("#btnResult");
   btnResult.addEventListener("click", calculateResult);
 
+  //  Question 4
 
+  
+let sname = 'programming'
+  let newName = "";
+  for (let i = sname.length - 1; i >= 0; i--) {
+      newName += sname[i];
+  }
+console.log(newName);
